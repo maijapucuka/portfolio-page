@@ -852,7 +852,7 @@ body:not(.user-is-tabbing) a:focus {
     max-width: 1000px;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* justify-content: center; */
     width: 100%;
 }
