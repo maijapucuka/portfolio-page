@@ -273,6 +273,7 @@ body:not(.user-is-tabbing) a:focus {
     color: inherit;
     border: 1px solid  var(--pink);
     font-weight: 400;
+    cursor: pointer;
 }
 
 .btn:focus {
@@ -945,22 +946,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* .work__image-box {
-    background-color: red;
-} */
-
-
-/* .work__test > .work__image-box {
-    width: 50%;
-    height: 80%;
-} */
-
-/* .relative {
-    position: relative;
-    height: 100vh;
-    background-color: #3f83f8;
-} */
-
 .close__btn {
     align-self: flex-end;
     background-color: transparent;
@@ -973,6 +958,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 1em;
     margin-right: 0;
     transition: all .3s;
+    cursor: pointer;
 }
 
 .close__btn:hover {
