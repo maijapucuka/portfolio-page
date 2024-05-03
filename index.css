@@ -371,6 +371,35 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
+@media(max-width: 600px) {
+    .banner-container {
+        padding: 0 var(--gutter-normal);
+    }
+}
+
+@media(max-width: 600px) {
+    .banner-container {
+        padding: 0 var(--gutter-small);
+    }
+}
+
+@media(max-width: 1800px) {
+    .banner-container {
+        padding: 0 var(--gutter-medium);
+    }
+}
+
+@media(min-width: 600px) {
+    .banner-container {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: rgb(0,0,0,0.8);
+        width: 100%;
+        padding-right: 2em;
+    }
+}
+
 .nav {
     display: flex;
     justify-content: flex-end;
