@@ -42,25 +42,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// document.addEventListener('click', function(e){
-    
-//   //Get the dataset attribute from the product that user clicked the add button for and create new item for this product
-//   if (e.target.dataset.open) {
-//       createNewItem(e.target.dataset.btn)
-      
-//   //Delete the product property from the food item object if user clicks its remove btn
-//   } else if (e.target.dataset.remove) {
-//       const test = e.target.dataset.remove
-//       delete foodItemArr[test]
-      
-//       //Render user menu
-//       renderUserMenu()
-//   }
-// })
-
 document.addEventListener('click', function(e){
     
-  //Get the dataset attribute from the product that user clicked the add button for and create new item for this product
   if (e.target.dataset.open) {
     console.log(e.target.dataset.open)
     document.getElementById(e.target.dataset.open).classList.remove("display__none")
@@ -68,27 +51,27 @@ document.addEventListener('click', function(e){
     document.getElementById("relative").classList.remove("display__none")
     document.getElementById("portfolio").style.display = "none";
       
-  //Delete the product property from the food item object if user clicks its remove btn
   } else if (e.target.dataset.close) {
     document.getElementById(e.target.dataset.close).classList.remove("work__test")
     document.getElementById(e.target.dataset.close).classList.add("display__none")
     document.getElementById("portfolio").style.display = "grid";
   }
-
-  // window.addEventListener('resize', function() {
-  //   if (window.innerWidth < 900) {
-  //     console.log("I'm wide!!!")
-  //     document.getElementById("portfolio").style.display = "none";
-  //   }
-
-  //   if (window.innerWidth >= 900) {
-  //     console.log("I'm wide!!!")
-  //     document.getElementById("portfolio").style.display = "grid";
-  // }
-  // });
-
 })
 
+//Change navigation container color when page is scrolled
+const navbar = document.getElementById('nav');
+
+window.onscroll = () => {
+  if (window.scrollY > 350) {
+      navbar.classList.add("nav-scroll");
+      navbar.classList.remove("nav-top");
+  } else {
+    navbar.classList.add("nav-top");
+    navbar.classList.remove("nav-scroll");
+  }
+};
+
+//CV download
 const resumeDownloadBtn = document.getElementById("download-resume");
 
 resumeDownloadBtn.addEventListener('click', () => {
@@ -100,25 +83,3 @@ resumeDownloadBtn.addEventListener('click', () => {
   resumeDownloadLink.click();
 });
  
-
-// window.addEventListener('resize', function() {
-//   if (window.innerWidth < 900) {
-//     console.log("I'm wide!!!")
-//     document.getElementById("portfolio").style.display = "none";
-//   }
-//   if (window.innerWidth >= 900) {
-//     console.log("I'm wide!!!")
-//     document.getElementById("portfolio").style.display = "grid";
-// }
-// });
-
-// document.getElementById("test").addEventListener("click", () => {
-//   document.getElementById("test1").classList.remove("display__none")
-//   document.getElementById("test1").classList.add("work__test")
-//   document.getElementById("relative").classList.remove("display__none")
-// })
-
-// document.getElementById("close__btn").addEventListener("click", () => {
-//   document.getElementById("test1").classList.remove("work__test")
-//   document.getElementById("test1").classList.add("display__none")
-// })
