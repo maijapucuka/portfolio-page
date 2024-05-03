@@ -766,7 +766,6 @@ body:not(.user-is-tabbing) a:focus {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        /* width: min-content; */
         margin: auto;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -775,8 +774,7 @@ body:not(.user-is-tabbing) a:focus {
         grid-template-columns: min-content max-content;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-top: 6em;
-        /* background-color: #3f83f8; */
+        padding-top: 15em;
     }
     
     .intro__img {
@@ -794,6 +792,12 @@ body:not(.user-is-tabbing) a:focus {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        padding-top: 6em;
     }
 }
 
