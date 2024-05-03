@@ -535,7 +535,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -548,9 +547,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__code:hover {
-    transform: scale(1.2);
-    background-color: var(--pink);
-    border-radius: 6px;
+    transform: scale(1.4);
+    fill: var(--pink);
 }
 
 .work__image-box {
@@ -660,6 +658,7 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
     padding: var(--gutter-normal) 0;
     list-style: none;
+    color: var(--pink);
 }
 
 .footer__social-link-item:not(:last-of-type) {
@@ -671,10 +670,12 @@ body:not(.user-is-tabbing) a:focus {
     padding: .2em;
 }
 
-.footer__social-image:hover {
-    background-color: var(--pink);
-    border-radius: 6px;
-    /* padding: 1em; */
+svg {
+    fill: #fff;
+}
+
+svg:hover {
+    fill: var(--pink);
 }
 
 .instagram {
