@@ -505,6 +505,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     justify-content: center;
     gap: 2em;
+    padding: 1em;
 }
 
 @media(max-width: 900px) {
@@ -779,7 +780,7 @@ svg:hover {
         grid-template-columns: min-content max-content;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-top: 15em;
+        padding-top: 17em;
     }
     
     .intro__img {
@@ -802,7 +803,7 @@ svg:hover {
 
 @media (min-width: 1200px) {
     .intro {
-        padding-top: 6em;
+        padding-top: 9em;
     }
 }
 
