@@ -534,6 +534,10 @@ body:not(.user-is-tabbing) a:focus {
     /* width: 100%; */
 }
 
+.work__text > h3 {
+    color: var(--pink);
+}
+
 .work__list {
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
